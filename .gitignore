@@ -1,44 +1,33 @@
+@'
 # Dependencies
-/node_modules
+node_modules/
 
-# Build output
-/dist
-/build
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Editor directories and files
-.vscode/
-.idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Coverage directory used by tools like Jest
-/coverage
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
+# Build / caches
+dist/
+build/
+.next/
+out/
+.vite/
+.cache/
+.parcel-cache/
 .eslintcache
 
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# System/editor
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+
+# Tests/coverage
+coverage/
+
 # Misc
-*.tgz
+*.zip
+*.7z
+'@ | Out-File -Encoding utf8 .gitignore
