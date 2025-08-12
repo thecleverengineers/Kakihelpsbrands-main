@@ -205,13 +205,13 @@
     },
     {
       id: 26,
-      title: 'Nagaland Super League',
+      title: 'Melita Luxury Skincare',
       category: 'Case Study',
-      description: `From zero online presence to 6M+ video views – here’s how we built Nagaland’s biggest football league from the ground up.`,
+      description: `Melita Luxury Skincare is a Bangalore-based, science-driven skincare brand redefining luxury for Indian skin. With a vision to make high-efficacy, vegan, and sustainable skincare accessible, Melita set its sights on the Northeast—an emerging market with unique skin needs and growing demand for premium beauty.`,
       image: '/works/casestudy/nsl.png',
       link:'',
       year: '2024',
-      client: 'NSL'
+      client: 'Melita'
     },
     {
       id: 27,
@@ -225,6 +225,16 @@
     },
     {
       id: 28,
+      title: 'Nagaland Super League',
+      category: 'Case Study',
+      description: `From zero online presence to 6M+ video views – here’s how we built Nagaland’s biggest football league from the ground up.`,
+      image: '/works/casestudy/nsl.png',
+      link:'',
+      year: '2024',
+      client: 'NSL'
+    },
+    {
+      id: 29,
       title: 'Tribe Fighting Championship (TFC)',
       category: 'Case Study',
       description: `Tribe Fighting Championship (TFC) was launched by Combat Academy Dimapur as the region’s first premium combat sports event featuring both international and local fighters.`,
