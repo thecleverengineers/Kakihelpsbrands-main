@@ -28,3 +28,6 @@ Thumbs.db
 *.ai
 *.exe
 *.apk
+
+# Public folder
+/public/
