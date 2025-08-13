@@ -1,33 +1,30 @@
-@'
-# Dependencies
+# Node / JS
 node_modules/
-
-# Build / caches
 dist/
 build/
 .next/
-out/
-.vite/
 .cache/
-.parcel-cache/
-.eslintcache
+coverage/
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+.pnpm-store/
 
-# Env & secrets
-.env
-.env.*
-!.env.example
-
-# System/editor
+# OS / env
 .DS_Store
 Thumbs.db
-*.log
-.idea/
-.vscode/
+.env*
+.env
 
-# Tests/coverage
-coverage/
-
-# Misc
+# Big binaries (move to LFS if needed)
 *.zip
+*.rar
 *.7z
-'@ | Out-File -Encoding utf8 .gitignore
+*.mp4
+*.mov
+*.avi
+*.psd
+*.ai
+*.exe
+*.apk
