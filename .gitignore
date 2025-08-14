@@ -17,7 +17,7 @@ Thumbs.db
 .env*
 .env
 
-# Big binaries (move to LFS if needed)
+# Big binaries (move to LFS or external storage)
 *.zip
 *.rar
 *.7z
@@ -28,6 +28,3 @@ Thumbs.db
 *.ai
 *.exe
 *.apk
-
-# Public folder
-/public/
