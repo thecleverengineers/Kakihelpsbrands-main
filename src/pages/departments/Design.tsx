@@ -3,6 +3,13 @@ import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
+
+import nsl from '@/assets/works/design/NSL/FULL PLAY OFFS.jpg';
+import ohanki from '@/assets/works/design/ohanki/ohanki.png';
+import jv from '@/assets/works/design/JV/JV Back Drop.jpg';
+import bloom from '@/assets/works/design/Bloom Bazaar/Bloom Bazaar.jpg';
+
+
 const Design = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -41,13 +48,32 @@ const Design = () => {
   ];
 
   const portfolio = [
-    { title: 'Tech Startup Rebrand', type: 'Brand Identity', industry: 'Technology' },
-    { title: 'E-commerce Platform', type: 'UI/UX Design', industry: 'Retail' },
-    { title: 'Organic Skincare Line', type: 'Packaging Design', industry: 'Beauty' },
-    { title: 'Restaurant Chain Identity', type: 'Brand Identity', industry: 'Food & Beverage' },
-    { title: 'Mobile Banking App', type: 'UI/UX Design', industry: 'Finance' },
-    { title: 'Craft Beer Packaging', type: 'Packaging Design', industry: 'Beverages' }
+    { 
+      title: 'Nagaland Super League', 
+      type: 'Brand Identity', 
+      industry: 'NSL',
+      image: nsl
+    },
+    { 
+      title: 'E-commerce Platform', 
+      type: 'UI/UX Design', 
+      industry: 'Ohanki',
+      image: ohanki
+    },
+    { 
+      title: 'JV Foundation', 
+      type: 'Branding', 
+      industry: 'JV Foundation',
+      image: jv
+    },
+    { 
+      title: 'Bloom Bazaar', 
+      type: 'Branding & Packaging', 
+      industry: 'Bloom Bazaar',
+      image: bloom
+    },
   ];
+
 
   const designPrinciples = [
     {
@@ -98,13 +124,21 @@ const Design = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {portfolio.map((item, index) => (
-              <div key={item.title} className={`group cursor-pointer fade-in-on-scroll animation-delay-${index * 100}`}>
-                <div className="aspect-square bg-gradient-to-br from-red-900 to-pink-900 rounded-2xl mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 relative overflow-hidden">
-                  <div className="text-center z-10">
-                    <div className="text-sm text-kaki-grey mb-2">{item.type}</div>
+              <div 
+                key={item.title} 
+                className={`group cursor-pointer fade-in-on-scroll animation-delay-${index * 100}`}
+              >
+                <div className="aspect-square bg-kaki-black rounded-2xl mb-4 overflow-hidden relative group-hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-kaki-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center text-white p-4">
+                    <div className="text-sm mb-2">{item.type}</div>
                     <div className="text-lg font-bold">{item.title}</div>
                   </div>
-                  <div className="absolute inset-0 bg-kaki-white opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
                 </div>
                 <div className="text-kaki-grey text-sm">{item.industry}</div>
               </div>
