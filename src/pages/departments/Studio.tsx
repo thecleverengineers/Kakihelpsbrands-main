@@ -3,6 +3,16 @@ import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
+import kakiVideo from '@/assets/video/kaki.mp4';
+import chefVideo from '@/assets/works/studio/chef.mp4';
+import chefPoster from '@/assets/works/studio/chef.jpg';
+import negamesVideo from '@/assets/works/studio/negames.mp4';
+import negamesPoster from '@/assets/works/studio/negames.jpg';
+import nslVideo from '@/assets/works/studio/nsl.mp4';
+import nslPoster from '@/assets/works/studio/nsl.jpg';
+import toyotaVideo from '@/assets/works/studio/toyota.mp4';
+import toyotaPoster from '@/assets/works/studio/toyota.jpg';
+
 const Studio = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -40,12 +50,37 @@ const Studio = () => {
     }
   ];
 
-  const portfolio = [
-    { title: 'Brand Commercial', type: 'Video', client: 'Tech Startup' },
-    { title: 'Product Launch', type: 'Photography', client: 'Fashion Brand' },
-    { title: 'Corporate Documentary', type: 'Video', client: 'Fortune 500' },
-    { title: 'Event Coverage', type: 'Photography', client: 'Music Festival' }
-  ];
+const portfolio = [
+  { 
+    title: 'Visual Productions', 
+    type: 'Video', 
+    client: 'Chef Salang',
+    video: chefVideo,
+    poster: chefPoster
+  },
+  { 
+    title: 'League Promo', 
+    type: 'Video', 
+    client: 'NSL',
+    video: nslVideo,
+    poster: nslPoster
+  },
+  { 
+    title: 'Media Production', 
+    type: 'Video', 
+    client: 'North East Games',
+    video: negamesVideo,
+    poster: negamesPoster
+  },
+  { 
+    title: 'Toyota Commercial', 
+    type: 'Video', 
+    client: 'Toyota',
+    video: toyotaVideo,
+    poster: toyotaPoster
+  }
+];
+
 
   return (
     <div className="min-h-screen pt-24">
@@ -65,18 +100,21 @@ const Studio = () => {
         </div>
       </section>
 
-      {/* Video Showcase Placeholder */}
-      <section className="section-padding bg-kaki-dark-grey">
-        <div className="container-custom">
-          <div className="aspect-video bg-kaki-black rounded-3xl flex items-center justify-center fade-in-on-scroll">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-kaki-white rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-kaki-black" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-              <p className="text-kaki-grey">Studio Reel Coming Soon</p>
-            </div>
+      {/* Video Showcase */}
+      <section className="py-16 md:section-padding bg-kaki-dark-grey">
+        <div className="container-custom px-4 md:px-24">
+          <div className="aspect-video bg-kaki-black rounded-3xl flex items-center justify-center fade-in-on-scroll overflow-hidden">
+            <video 
+              className="w-full h-full object-cover rounded-3xl"
+              src={kakiVideo} // ✅ update path to your actual video
+              autoPlay = {true}
+              muted
+              loop
+              controls
+              playsInline
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </section>
@@ -119,17 +157,33 @@ const Studio = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {portfolio.map((item, index) => (
-              <div key={item.title} className={`group cursor-pointer fade-in-on-scroll animation-delay-${index * 100}`}>
-                <div className="aspect-video bg-gradient-to-br from-purple-900 to-blue-900 rounded-2xl mb-4 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                  <div className="text-center">
-                    <div className="text-sm text-kaki-grey">{item.type}</div>
-                    <div className="text-lg font-bold">{item.title}</div>
-                  </div>
+              <div 
+                key={item.title} 
+                className={`group cursor-pointer fade-in-on-scroll animation-delay-${index * 100}`}
+              >
+                <div className="aspect-video bg-kaki-black rounded-2xl mb-4 overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                  {item.type === 'Video' && item.video ? (
+                    <video
+                      className="w-full h-full object-cover rounded-2xl"
+                      src={item.video}
+                      poster={item.poster}
+                      controls
+                      playsInline
+                    />
+                  ) : (
+                    <img 
+                      src={item.poster} 
+                      alt={item.title} 
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
+                  )}
                 </div>
                 <div className="text-kaki-grey text-sm">{item.client}</div>
+                <div className="text-lg font-bold">{item.title}</div>
               </div>
             ))}
           </div>
+
         </div>
       </section>
 
