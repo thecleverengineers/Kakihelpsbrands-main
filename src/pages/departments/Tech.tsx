@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Code, Smartphone, Globe, Eye, Database, Cpu } from 'lucide-react';
 
+import ahibiLogo from '@/assets/lovable-uploads/ahibi.png';
+import ahibi from '@/assets/img/ahibi.png';
+
 const Tech = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -119,7 +122,7 @@ const Tech = () => {
             <div className="fade-in-on-scroll">
               <div className="bg-white p-6 rounded-2xl inline-block mb-6">
                 <img 
-                  src="/lovable-uploads/e9d65bba-12b2-4f16-b50e-c7b41b4bdad4.png" 
+                  src={ahibiLogo}
                   alt="Ahibi Logo" 
                   className="h-12"
                 />
@@ -148,7 +151,7 @@ const Tech = () => {
             <div className="fade-in-on-scroll animation-delay-200">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=800&q=80" 
+                  src={ahibi}
                   alt="Ahibi Platform" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
                 />
