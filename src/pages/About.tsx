@@ -2,6 +2,13 @@
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import teamImg from '../assets/team/team.jpg';
+import mission2 from '../assets/team/mission2.jpg';
+import boss from '../assets/team/boss.jpg';
+import arong from '../assets/team/design/arong.jpg';
+import wako from '../assets/team/studio/wako.jpg';
+import kc from '../assets/team/tech/kc.jpg';
+
 
 const About = () => {
   useEffect(() => {
@@ -59,37 +66,37 @@ const About = () => {
     {
       name: 'Kakivi',
       role: 'Founder / Managing Director',
-      description: 'Drives the agency’s overall vision, aligning strategy, design, tech, and media to deliver powerful brand impact.',
+      description: 'Leads the agency’s overall vision...',
       specialization: 'Brand Strategy & Creative Direction',
-      image: './public/team/boss.png'
+      image: boss
     },
     {
       name: 'Arong',
       role: 'Creative Director',
-      description: 'Leads the creative process from concept to execution, ensuring every campaign tells a bold, cohesive story.',
+      description: 'Heads the creative process...',
       specialization: 'Video Production & Cinematography',
-      image: './public/team/design/arong.png'
+      image: arong
     },
     {
       name: 'Wako',
       role: 'Studio Director',
-      description: 'Heads the visual production team, specializing in cinematic storytelling through video and photography.',
+      description: 'Specializes in visual production...',
       specialization: 'Video Production & Cinematography',
-      image: './public/team/studio/wako.png'
+      image: wako
     },
     {
       name: 'KC',
       role: 'Tech Director',
-      description: 'Builds immersive digital experiences and brand identities that connect emotionally and function seamlessly.',
+      description: 'Builds immersive digital experiences...',
       specialization: 'Brand Identity & UI/UX Design',
-      image: './public/team/tech/kc.png'
+      image: kc
     }
   ];
 
   const values = [
     {
       title: 'Excellence',
-      description: 'We don’t settle for “good enough.” Every campaign, every design, every frame is crafted with sharp attention to detail and a drive to exceed expectations, because results matter.',
+      description: `We don’t  settle for “good enough.” Every campaign, design, and frame is crafted with sharp detail and a drive to exceed expectations, because results matter.`,
       icon: '✨',
       color: 'from-yellow-500 to-orange-500'
     },
@@ -149,7 +156,7 @@ const About = () => {
             <div className="fade-in-on-scroll animation-delay-200">
               <div className="relative">
                 <img 
-                  src="./team/team.jpg" 
+                  src={teamImg}
                   alt="KAKI Team Collaboration" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
                 />
@@ -185,7 +192,7 @@ const About = () => {
             <div className="fade-in-on-scroll animation-delay-200 order-2 lg:order-1">
               <div className="relative">
                 <img 
-                  src="./public/img/mission2.jpg" 
+                  src={mission2}  
                   alt="KAKI Team Collaboration" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
                 />
@@ -204,7 +211,7 @@ const About = () => {
           <div className="text-center mb-20 fade-in-on-scroll">
             <h2 className="text-4xl lg:text-5xl font-bold mb-8 text-white">Our Journey</h2>
             <p className="text-xl text-kaki-grey max-w-3xl mx-auto">
-              From humble beginnings in Nagaland to a full-scale creative agency: here’s how KAKI evolved, one bold move at a time.
+              From a small studio in Nagaland to a full-scale creative agency: here’s how KAKI evolved, one bold move at a time.
             </p>
           </div>
 

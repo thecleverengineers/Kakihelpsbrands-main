@@ -3,6 +3,32 @@ import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Linkedin, Twitter,Instagram, Mail } from 'lucide-react';
+import boss from '../assets/team/boss.jpg';
+import arong from '../assets/team/design/arong.jpg';
+import wako from '../assets/team/studio/wako.jpg';
+import kc from '../assets/team/tech/kc.jpg';
+import along from '../assets/team/studio/along.jpg';
+import mego from '../assets/team/studio/mego.png';
+import akhro from '../assets/team/studio/akhro.jpg';
+import maya from '../assets/team/studio/maya.jpg';
+import nokul from '../assets/team/studio/nokul.jpg';
+import amugha from '../assets/team/studio/amugha.jpg';
+import christy from '../assets/team/marketing/christy.jpg';
+import ajung from '../assets/team/marketing/ajung.jpg';
+import meren from '../assets/team/marketing/meren.jpg';
+import lepok from '../assets/team/marketing/lepok.jpg';
+import kuku from '../assets/team/marketing/kuku.jpg';
+import koko from '../assets/team/marketing/koko.jpg';
+import ngamshing from '../assets/team/marketing/ngamshing.jpg';
+import akok from '../assets/team/marketing/akok.jpg';
+import toika from '../assets/team/marketing/toika.jpg';
+import anu from '../assets/team/marketing/anu.jpg';
+import sully from '../assets/team/design/sully.jpg';
+import tono from '../assets/team/design/tono.jpg';
+import vinoto from '../assets/team/tech/vinoto.jpg';
+import mostafa from '../assets/team/tech/mostafa.png';
+import pabitra from '../assets/team/tech/pabitra.jpg';
+
 
 const Team = () => {
   useEffect(() => {
@@ -29,7 +55,7 @@ const Team = () => {
       {
         name: 'Kakivi',
         role: 'Founder / Managing Director',
-        image: './public/team/boss.png',
+        image: boss,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -39,7 +65,7 @@ const Team = () => {
       {
         name: 'Arong',
         role: 'Creative Director',
-        image: './public/team/design/arong.png',
+        image: arong,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -49,7 +75,7 @@ const Team = () => {
       {
         name: 'Wako',
         role: 'Studio Director',
-        image: './public/team/studio/wako.png',
+        image: wako,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -59,7 +85,7 @@ const Team = () => {
       {
         name: 'KC',
         role: 'Tech Director',
-        image: './public/team/tech/kc.png',
+        image: kc,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -71,7 +97,7 @@ const Team = () => {
       {
         name: 'Wako',
         role: 'Studio Director',
-        image: '/public/team/studio/wako.png',
+        image: wako,
         social: {
           linkedin: 'https://linkedin.com/',
           email: 'morgan@kaki.design'
@@ -80,7 +106,7 @@ const Team = () => {
       {
         name: 'Along',
         role: 'Videographer',
-        image: '/public/team/studio/along.png',
+        image: along,
         social: {
           linkedin: 'https://linkedin.com/',
           email: 'morgan@kaki.design'
@@ -89,7 +115,7 @@ const Team = () => {
       {
         name: 'Mego',
         role: 'Videographer/Photographer',
-        image: '/public/team/studio/mego.png',
+        image: mego,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -99,7 +125,7 @@ const Team = () => {
       {
         name: 'Akhro',
         role: 'Videoprapher/Photographer',
-        image: 'public/team/studio/akhro.png',
+        image: akhro,
         social: {
           linkedin: 'https://linkedin.com/',
           email: 'river@kaki.design'
@@ -108,7 +134,7 @@ const Team = () => {
       {
         name: 'Maya',
         role: 'Videoprapher/Photographer',
-        image: 'public/team/studio/maya.png',
+        image: maya,
         social: {
           linkedin: 'https://linkedin.com/',
           email: 'river@kaki.design'
@@ -117,7 +143,16 @@ const Team = () => {
       {
         name: 'Amugha',
         role: 'Photographer',
-        image: 'public/team/studio/amugha.png',
+        image: amugha,
+        social: {
+          linkedin: 'https://linkedin.com/',
+          email: 'river@kaki.design'
+        }
+      },
+      {
+        name: 'Nokul',
+        role: 'Videoprapher/Photographer',
+        image: nokul,
         social: {
           linkedin: 'https://linkedin.com/',
           email: 'river@kaki.design'
@@ -128,7 +163,7 @@ const Team = () => {
       {
         name: 'Christy',
         role: 'HR (Human Resource)',
-        image: 'public/team/marketing/christy.png',
+        image: christy,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -138,7 +173,7 @@ const Team = () => {
       {
         name: 'Ajung',
         role: 'Social Media Manager',
-        image: 'public/team/marketing/ajung.png',
+        image: ajung,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -148,7 +183,7 @@ const Team = () => {
       {
         name: 'Meren',
         role: 'Social Media Manager',
-        image: 'public/team/marketing/meren.png',
+        image: meren,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -158,7 +193,7 @@ const Team = () => {
       {
         name: 'Lepok',
         role: 'Digital Marketing Assistant',
-        image: 'public/team/marketing/lepok.png',
+        image: lepok,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -168,7 +203,7 @@ const Team = () => {
       {
         name: 'Kuku',
         role: 'Social Media Coordinator',
-        image: 'public/team/marketing/kuku.png',
+        image: kuku,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -178,7 +213,7 @@ const Team = () => {
       {
         name: 'Koko',
         role: 'BDE (Business Development Executive)',
-        image: 'public/team/marketing/koko.png',
+        image: koko,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -188,7 +223,7 @@ const Team = () => {
       {
         name: 'Ngamshing',
         role: 'Content Writer',
-        image: 'public/team/marketing/ngamshing.png',
+        image: ngamshing,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -198,7 +233,7 @@ const Team = () => {
       {
         name: 'Akok',
         role: 'Support Manager',
-        image: 'public/team/marketing/Akok.png',
+        image: akok,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -208,7 +243,17 @@ const Team = () => {
       {
         name: 'Toika',
         role: 'Digital Marketing Executive',
-        image: 'public/team/marketing/toika.png',
+        image: toika,
+        social: {
+          linkedin: 'https://linkedin.com/',
+          instagram: 'https://twitter.com/',
+          email: 'casey@kaki.design'
+        }
+      },
+      {
+        name: 'Anuvito',
+        role: 'Content Writer',
+        image: anu,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -220,7 +265,7 @@ const Team = () => {
       {
         name: 'Arong',
         role: 'Creative Director',
-        image: './public/team/design/arong.png',
+        image: arong,
         social: {
           linkedin: 'https://linkedin.com/',
           email: 'quinn@kaki.design'
@@ -229,7 +274,7 @@ const Team = () => {
       {
         name: 'Sully',
         role: 'Graphic Designer',
-        image: './public/team/design/sully.png',
+        image: sully,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -239,7 +284,7 @@ const Team = () => {
       {
         name: 'Tono',
         role: 'Graphic Designer',
-        image: './public/team/design/tono.png',
+        image: tono,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -249,7 +294,7 @@ const Team = () => {
       {
         name: 'Sungti',
         role: 'Graphic Designer',
-        image: './public/team/design/sungti.png',
+        image: sungti,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -261,7 +306,17 @@ const Team = () => {
       {
         name: 'KC',
         role: 'Tech Director',
-        image: './public/team/tech/kc.png',
+        image: kc,
+        social: {
+          linkedin: 'https://linkedin.com/',
+          instagram: 'https://twitter.com/',
+          email: 'cameron@kaki.design'
+        }
+      },
+      {
+        name: 'Mostafa',
+        role: 'Full Stack Developer',
+        image: mostafa,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
@@ -271,13 +326,23 @@ const Team = () => {
       {
         name: 'Vinoto',
         role: 'Front-End Web Dev',
-        image: './public/team/tech/vinoto.png',
+        image: vinoto,
         social: {
           linkedin: 'https://linkedin.com/',
           instagram: 'https://twitter.com/',
           email: 'jordan.m@kaki.design'
         }
-      }
+      },
+      {
+        name: 'Pabitra',
+        role: 'Full Stack Developer',
+        image: pabitra,
+        social: {
+          linkedin: 'https://linkedin.com/',
+          instagram: 'https://twitter.com/',
+          email: 'jordan.m@kaki.design'
+        }
+      },
     ]
   };
 
@@ -379,7 +444,7 @@ const Team = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { number: '45+', label: 'Tech Professionals' },
-              { number: '8', label: 'Years of Excellence' },
+              { number: '4+', label: 'Years of Excellence' },
               { number: '200+', label: 'Projects Completed' },
               { number: '15', label: 'Industry Awards' }
             ].map((stat, index) => (

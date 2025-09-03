@@ -126,7 +126,7 @@ const Departments = () => {
           <div className="text-center mb-16 fade-in-on-scroll">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">Our Process</h2>
             <p className="text-lg text-kaki-grey max-w-2xl mx-auto">
-              How we work across all departments to deliver exceptional results.
+              How we collaborate across departments to deliver impactful results.
             </p>
           </div>
 

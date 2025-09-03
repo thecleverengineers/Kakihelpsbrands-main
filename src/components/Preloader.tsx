@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from 'react';
+import logo from '../assets/logos/logo-no-bg.png';
 
 const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,7 +28,7 @@ const Preloader = () => {
       <div className="text-center">
         <div className="mb-8 animate-logo-float">
           <img 
-            src="/logos/logo-no-bg.png" 
+            src={logo} 
             alt="KAKI Logo" 
             className="h-28 w-auto mx-auto"
           />

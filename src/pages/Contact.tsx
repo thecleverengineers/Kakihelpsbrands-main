@@ -68,21 +68,21 @@ const Contact = () => {
   const contactInfo = [
     {
       title: 'General Inquiries',
-      email: 'hello@kaki.design',
+      email: 'KAKI.HELPS.BRANDS@GMAIL.COM',
       description: 'For general questions and collaboration opportunities',
       icon: <Mail className="w-6 h-6" />,
       color: 'from-blue-500 to-purple-600'
     },
     {
       title: 'New Business',
-      email: 'business@kaki.design',
+      email: 'KAKI.HELPS.BRANDS@GMAIL.COM',
       description: 'Ready to start a project? Let\'s discuss your vision',
       icon: <Phone className="w-6 h-6" />,
       color: 'from-green-500 to-teal-600'
     },
     {
       title: 'Careers',
-      email: 'careers@kaki.design',
+      email: 'KAKI.HELPS.BRANDS@GMAIL.COM',
       description: 'Join our creative team and craft culture with us',
       icon: <MapPin className="w-6 h-6" />,
       color: 'from-pink-500 to-red-600'
@@ -363,8 +363,8 @@ const Contact = () => {
               <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-6">
                 <MapPin className="w-10 h-10 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-white">Visit Our Studio</h3>
-              <p className="text-kaki-grey mb-4 text-lg">Creative District<br />Downtown Los Angeles, CA</p>
+              <h3 className="text-2xl font-bold mb-4 text-white">Visit Our Office</h3>
+              <p className="text-kaki-grey mb-4 text-lg">132 B, 2 ½ Mile<br />Darogapather, Dimapur, Nagaland</p>
               <p className="text-sm text-kaki-grey mb-8">
                 Come visit our creative space where culture is crafted daily. 
                 Schedule a tour to see our studios, meet the team, and get inspired.

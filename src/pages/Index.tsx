@@ -4,6 +4,13 @@ import { Button } from '@/components/ui/button';
 import { ArrowDown, Play, Pause, Instagram, Youtube, Facebook, Twitter, Video, Code, Smartphone } from 'lucide-react';
 import { FaXTwitter } from 'react-icons/fa6';
 
+import logo from '../assets/logos/logo-no-bg.png';
+import ahibiLogo from '../assets/lovable-uploads/ahibi.png';
+import ahibi from '../assets/img/ahibi.png';
+import nslpf from '../assets/works/marketing/nslpf.jpg';
+import chef from '../assets/works/studio/chef.jpg';
+import melita from '../assets//works/tech/melita.png';
+
 const Index = () => {
   const heroRef = useRef<HTMLDivElement>(null); 
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -108,7 +115,7 @@ const Index = () => {
         <div className="relative z-10 text-center container-custom pt-20 pb-20">
           <div className="animate-fade-in-up">
             <img 
-              src="/logos/logo-no-bg.png" 
+              src={logo} 
               alt="KAKI Logo" 
               className="h-32 lg:h-48 w-auto mx-auto mb-8 animate-logo-float drop-shadow-2xl"
             />
@@ -243,7 +250,7 @@ const Index = () => {
             <div className="fade-in-on-scroll">
               <div className="bg-white p-8 rounded-3xl text-center mb-8">
                 <img 
-                  src="/lovable-uploads/e9d65bba-12b2-4f16-b50e-c7b41b4bdad4.png" 
+                  src={ahibiLogo} 
                   alt="Ahibi Logo" 
                   className="h-16 mx-auto"
                 />
@@ -267,7 +274,7 @@ const Index = () => {
             <div className="fade-in-on-scroll animation-delay-200">
               <div className="relative">
                 <img 
-                  src="./img/ahibi.png" 
+                  src={ahibi}
                   alt="Ahibi Platform Preview" 
                   className="w-full h-auto rounded-3xl shadow-2xl"
                 />
@@ -319,21 +326,24 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {[
               {
-                title: 'Tech Startup Campaign',
+                title: 'Nagaland Super League',
                 category: 'Marketing',
-                image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80',
+                description:'Social media marketing, ticketing, media production, and branding.',
+                image: nslpf,
                 gradient: 'from-green-500 to-teal-600'
               },
               {
-                title: 'Fashion Brand Film',
-                category: 'Studio',
-                image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=800&q=80',
+                title: 'Studio',
+                category: 'Chef Salang',
+                description:'Photography, video production, post-production, and brand visuals.',
+                image: chef,
                 gradient: 'from-purple-500 to-blue-600'
               },
               {
-                title: 'Ahibi Platform',
+                title: 'Melita',
                 category: 'Tech',
-                image: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=800&q=80',
+                description:'Web development, cloud integration, and scalable backend systems.',
+                image: melita,
                 gradient: 'from-cyan-500 to-blue-600'
               }
             ].map((work, index) => (
@@ -348,6 +358,7 @@ const Index = () => {
                   <div className="absolute bottom-6 left-6 right-6">
                     <div className="text-sm text-kaki-grey mb-2">{work.category}</div>
                     <h3 className="text-xl font-bold text-white">{work.title}</h3>
+                    <p className="text-sm text-white">{work.description}</p>
                   </div>
                 </div>
               </div>
