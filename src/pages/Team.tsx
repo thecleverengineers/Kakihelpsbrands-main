@@ -291,16 +291,6 @@ const Team = () => {
           email: 'riley@kaki.design'
         }
       },
-      {
-        name: 'Sungti',
-        role: 'Graphic Designer',
-        image: sungti,
-        social: {
-          linkedin: 'https://linkedin.com/',
-          instagram: 'https://twitter.com/',
-          email: 'riley@kaki.design'
-        }
-      }
     ],
     tech: [
       {
